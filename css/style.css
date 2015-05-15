@@ -1,0 +1,45 @@
+body{
+	color: teal;
+	
+}
+
+
+.score{
+	text-align: center;
+}
+
+.board{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: url(rsz_drake.png) auto;
+
+
+}
+
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  border: 1px solid black;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
