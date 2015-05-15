@@ -17,6 +17,13 @@ body{
 
 
 }
+.box{
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	border: 1px solid black;
+
+}
 
 
 .circle {
@@ -41,5 +48,12 @@ body{
 
 .yellow {
   background: yellow;
+}
+
+.purple{
+	background: purple;
+}
+.orange{
+	background: orange;
 }
 
