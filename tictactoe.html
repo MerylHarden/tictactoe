@@ -16,20 +16,40 @@
 
 
 <body ng-app="tacApp">
+<div class= "board">
 	<div ng-controller="TacController as tacCtrl">
 
-		<div class="circle {{tacCtrl.fbObject.color}}" ng-click="tacCtrl.clickMe()">
+		<div class="box {{tacCtrl.fbObject.color}}" ng-click="tacCtrl.clickMe()">
             	
         </div>
 
-        <div class="circle {{tacCtrl.fbObject.otherColor }}" ng-click="tacCtrl.clickMe()">
+        <div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
             	
         </div>
 
-       <div class="circle {{tacCtrl.fbObject.otherColor }}" ng-click="tacCtrl.clickMe()">
-    </div>
+       <div class="circle {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
+    	</div>
+
+	   	<div class="circle {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	</div>
+
+	    <div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
+	    </div>
+
+	   	 <div class="circle {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
+	   	 </div>
+
+	   	 <div class="circle {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	 </div>
+
+ 		<div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
+	   	 </div>
+
+	   	<div class="circle {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	 </div>
 
 
+</div>
 
 
 
