@@ -9,19 +9,21 @@ body{
 }
 
 .board{
-	width: 600px;
+	width: 350px;
 	height: 600px;
 	margin: 0 auto;
 	text-align: center;
 	cursor: url(rsz_drake.png) auto;
+	
 
 
 }
 .box{
 	width: 100px;
 	height: 100px;
-	margin: 50px auto;
+	margin: 0px auto;
 	border: 1px solid black;
+	display: inline-block;
 
 }
 
@@ -30,8 +32,9 @@ body{
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin: 50px auto;
+  margin: 0px auto;
   border: 1px solid black;
+  display: inline-block;
 }
 
 .red {
@@ -56,4 +59,3 @@ body{
 .orange{
 	background: orange;
 }
-
