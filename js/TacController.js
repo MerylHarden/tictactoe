@@ -1,3 +1,4 @@
+
 angular
     .module("tacApp")
     .controller("TacController", TacController);
@@ -54,7 +55,3 @@ function TacController($firebaseObject){
     }
 
 }
-
-
-
-
