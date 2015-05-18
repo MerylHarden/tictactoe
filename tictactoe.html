@@ -15,38 +15,102 @@
 	<title>Tic Tac Bro</title>
 
 
-<body ng-app="tacApp">
-<div class= "board">
-	<div ng-controller="TacController as tacCtrl">
+<body ng-controller="TacController as tacCtrl" ng-class="{ '50 Cent': tacCtrl.50cent, 'Lil' Wayne': tacCtrl.lilw}">
+	<div id="container">
+<center><h1>Tic Tac Bro</h1></center>
 
-		<div class="box {{tacCtrl.fbObject.color}}" ng-click="tacCtrl.clickMe()">
+<div id = "scoreboard">
+
+	<button ng-click="tacCtrl.resetScore()">Begin a new game!</button>
+	<h3>{{ tacCtrl.playTime.player1.myName }}: {{ tacCtrl.playTime.p1 }} wins with 50 Cent</h3>
+	<h3>{{ tacCtrl.playTime.player2.myName }}: {{ tacCtrl.playTime.p2 }} wins with Lil Wayne</h3>
+	<h3>Ties: {{ tacCtrl.playTime.tie }}</h3>
+
+<div id="statusMessage">
+					
+					<h2>{{ tacCtrl.playTime.status }}</h2>
+					<button ng-click="tacCtrl.resetTable()">Alright, double or nothin!</button>
+				</div>
+			</div>
+			
+					
+		<div class="box {{tacCtrl.fbObject.boxes }}" ng-click="tacCtrl.clickBox()">
             	
         </div>
 
-        <div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
+        <div class="box {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
             	
         </div>
 
-       <div class="circle {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
+       <div class="box {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
     	</div>
 
-	   	<div class="circle {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	<div class="box {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
 	   	</div>
 
 	    <div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
 	    </div>
 
-	   	 <div class="circle {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
+	   	 <div class="box {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
 	   	 </div>
 
-	   	 <div class="circle {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	 <div class=" box {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
 	   	 </div>
 
  		<div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
 	   	 </div>
 
-	   	<div class="circle {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	<div class="box {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
 	   	 </div>
+
+
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--
+		<div class="box {{tacCtrl.fbObject.boxes }}" ng-click="tacCtrl.clickBox()">
+            	
+        </div>
+
+        <div class="box {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
+            	
+        </div>
+
+       <div class="box {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
+    	</div>
+
+	   	<div class="box {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	</div>
+
+	    <div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
+	    </div>
+
+	   	 <div class="box {{tacCtrl.fbObject.purpleColor }}" ng-click="tacCtrl.clickMe()">
+	   	 </div>
+
+	   	 <div class=" box {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	 </div>
+
+ 		<div class="box {{tacCtrl.fbObject.blueColor }}" ng-click="tacCtrl.click2()">
+	   	 </div>
+
+	   	<div class="box {{tacCtrl.fbObject.orangeColor }}" ng-click="tacCtrl.clickMe()">
+	   	 </div>
+
+<!--
 
 
 </div>
@@ -56,7 +120,7 @@
 
 
 
-	<!-- <h1>Tic Tac Bro</h1>
+	 <h1>Tic Tac Bro</h1>
 	<div class="score"></div>
 	<div class="board"> 
 		<div class ="box" ng-repeat="box in tacCtrl.fbObject">
